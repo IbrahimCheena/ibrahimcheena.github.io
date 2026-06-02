@@ -90,6 +90,104 @@
       .hero-profile-img .overlay {
         background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.55) 100%);
       }
+
+      /* ===== MOBILE RESPONSIVE ===== */
+      @media (max-width: 767px) {
+
+        /* Hide the hero side image — let text breathe on mobile */
+        .hero-profile-img {
+          display: none;
+        }
+
+        /* Center hero text */
+        .slider-text {
+          justify-content: center !important;
+          text-align: center;
+          padding: 0 1.5rem;
+        }
+
+        .slider-text .one-forth {
+          width: 100%;
+        }
+
+        .slider-text .text h1 {
+          font-size: 2rem;
+        }
+
+        .slider-text .text h2 {
+          font-size: 1.1rem;
+        }
+
+        /* Fix typing animation horizontal overflow */
+        #typing-animation {
+          white-space: normal;
+          font-size: 20px;
+          display: block;
+        }
+
+        /* Scale down large decorative headings */
+        h1.big, h1.big-2 {
+          font-size: 3.5rem !important;
+        }
+
+        /* Stack experience/project cards full width */
+        .resume-wrap {
+          margin-bottom: 2rem;
+        }
+
+        /* Ensure buttons don't overflow */
+        .btn {
+          white-space: normal;
+          word-break: break-word;
+        }
+
+        /* Tighten section padding on mobile */
+        .ftco-section {
+          padding: 4rem 0 !important;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .slider-text .text h1 {
+          font-size: 1.6rem;
+        }
+
+        .slider-text .text h2 {
+          font-size: 1rem;
+        }
+
+        #typing-animation {
+          font-size: 16px;
+        }
+
+        h1.big, h1.big-2 {
+          font-size: 2.5rem !important;
+        }
+
+        /* Hero buttons: stack vertically */
+        .slider-text .text p {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0.75rem;
+        }
+
+        .slider-text .text p .btn {
+          width: fit-content;
+        }
+
+        /* About section image centered */
+        .about-img {
+          text-align: center;
+          margin-bottom: 1.5rem;
+        }
+
+        /* Contact section email wraps */
+        .contact-info a {
+          word-break: break-all;
+          font-size: 0.85rem;
+        }
+      }
     </style>
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
