@@ -78,6 +78,18 @@
       .zoom-effect:hover {
         transform: scale(1.1);
       }
+
+      /* Hero profile image */
+      .hero-profile-img {
+        border-radius: 24px;
+        overflow: hidden;
+        box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5);
+        position: relative;
+      }
+
+      .hero-profile-img .overlay {
+        background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.55) 100%);
+      }
     </style>
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -107,12 +119,12 @@
           <div class="overlay"></div>
           <div class="container">
             <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-				<div class="one-third order-md-last img" style="
+				<div class="one-third order-md-last img hero-profile-img" style="
 				background-image: url(images/IMG_6094.jpeg);
-				background-size: cover; /* Ensures the image covers the container */
-				background-position: center; /* Centers the image */
-				width: 500px; /* Set your desired width */
-				height: 650px !important; /* Set your desired height */
+				background-size: cover;
+				background-position: center top;
+				width: 460px;
+				height: 600px !important;
 			  ">
 				<div class="overlay"></div>
 			  </div>
