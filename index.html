@@ -4,680 +4,395 @@
     <title>Ibrahim Cheena Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/aos.css">
-
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    
-    <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-
-    <style>
-      /* Custom styles */
-      .about-mf .box-shadow-full {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-      }
-
-      .about-mf .about-img {
-        margin-bottom: 2rem;
-      }
-
-      .about-mf .about-img img {
-        margin-left: 10px;
-      }
-
-      .skill-mf .progress {
-        margin: .5rem 0 1.2rem 0;
-        border-radius: 0;
-        height: .7rem;
-      }
-
-      .skill-mf .progress .progress-bar {
-        height: .7rem;
-        background-color: #ffbd39;
-      }
-
-      /* Typing animation */
-      #typing-animation {
-        position: relative;
-        font-size: 30px;
-        font-weight: bold;
-        color: rgb(255, 255, 255);
-        overflow: hidden;
-        white-space: nowrap;
-        animation: typing 3s steps(20, end) infinite;
-      }
-
-      @keyframes typing {
-        from { width: 0; }
-        to { width: 100%; }
-      }
-
-      @keyframes typing-cursor {
-        from { width: 5px; }
-        to { width: 0; }
-      }
-
-      /* Project image zoom effect */
-      .zoom-effect {
-        overflow: hidden;
-        transition: transform 0.3s ease-out;
-      }
-
-      .zoom-effect:hover {
-        transform: scale(1.1);
-      }
-
-      /* Hero profile image */
-      .hero-profile-img {
-        border-radius: 24px;
-        overflow: hidden;
-        box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5);
-        position: relative;
-      }
-
-      .hero-profile-img .overlay {
-        background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.55) 100%);
-      }
-
-      /* ===== MOBILE RESPONSIVE ===== */
-      @media (max-width: 767px) {
-
-        /* Hide the hero side image — let text breathe on mobile */
-        .hero-profile-img {
-          display: none;
-        }
-
-        /* Center hero text */
-        .slider-text {
-          justify-content: center !important;
-          text-align: center;
-          padding: 0 1.5rem;
-        }
-
-        .slider-text .one-forth {
-          width: 100%;
-        }
-
-        .slider-text .text h1 {
-          font-size: 2rem;
-        }
-
-        .slider-text .text h2 {
-          font-size: 1.1rem;
-        }
-
-        /* Fix typing animation horizontal overflow */
-        #typing-animation {
-          white-space: normal;
-          font-size: 20px;
-          display: block;
-        }
-
-        /* Scale down large decorative headings */
-        h1.big, h1.big-2 {
-          font-size: 3.5rem !important;
-        }
-
-        /* Stack experience/project cards full width */
-        .resume-wrap {
-          margin-bottom: 2rem;
-        }
-
-        /* Ensure buttons don't overflow */
-        .btn {
-          white-space: normal;
-          word-break: break-word;
-        }
-
-        /* Tighten section padding on mobile */
-        .ftco-section {
-          padding: 4rem 0 !important;
-        }
-      }
-
-      @media (max-width: 576px) {
-        .slider-text .text h1 {
-          font-size: 1.6rem;
-        }
-
-        .slider-text .text h2 {
-          font-size: 1rem;
-        }
-
-        #typing-animation {
-          font-size: 16px;
-        }
-
-        h1.big, h1.big-2 {
-          font-size: 2.5rem !important;
-        }
-
-        /* Hero buttons: stack vertically */
-        .slider-text .text p {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 0.75rem;
-        }
-
-        .slider-text .text p .btn {
-          width: fit-content;
-        }
-
-        /* About section image centered */
-        .about-img {
-          text-align: center;
-          margin-bottom: 1.5rem;
-        }
-
-        /* Contact section email wraps */
-        .contact-info a {
-          word-break: break-all;
-          font-size: 0.85rem;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="css/cyberpunk.css">
   </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Ibrahim Cheena</a>
-        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="oi oi-menu"></span> Menu
-        </button>
-        <div class="collapse navbar-collapse" id="ftco-nav">
-          <ul class="navbar-nav nav ml-auto">
-			<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-			<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-			<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-			<li class="nav-item"><a href="#experience-section" class="nav-link"><span>Experience</span></a></li>
-			<li class="nav-item"><a href="#education-section" class="nav-link"><span>Education</span></a></li>
-			<li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-			<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+  <body>
+
+    <!-- ===================== NAVIGATION ===================== -->
+    <header class="cyber-nav" id="site-nav">
+      <div class="nav-inner">
+        <a class="brand" href="#home-section">Ibrahim<span class="brand-accent">_Cheena</span></a>
+        <nav>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#home-section" class="nav-link">Home</a></li>
+            <li><a href="#about-section" class="nav-link">About</a></li>
+            <li><a href="#resume-section" class="nav-link">Resume</a></li>
+            <li><a href="#experience-section" class="nav-link">Experience</a></li>
+            <li><a href="#education-section" class="nav-link">Education</a></li>
+            <li><a href="#project-section" class="nav-link">Projects</a></li>
+            <li><a href="#contact-section" class="nav-link">Contact</a></li>
           </ul>
-        </div>
+        </nav>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-    </nav>
+    </header>
 
-    <section id="home-section" class="hero">
-      <div class="home-slider owl-carousel">
-        <div class="slider-item">
-          <div class="overlay"></div>
-          <div class="container">
-            <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-				<div class="one-third order-md-last img hero-profile-img" style="
-				background-image: url(images/IMG_6094.jpeg);
-				background-size: cover;
-				background-position: center top;
-				width: 460px;
-				height: 600px !important;
-			  ">
-				<div class="overlay"></div>
-			  </div>
-              <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                <div class="text">
-                  <span class="subheading">Hello!</span>
-                  <h1 class="mb-4 mt-3">I'm <span>Ibrahim Cheena</span></h1>
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
+    <main>
+      <!-- ===================== HERO ===================== -->
+      <section id="home-section" class="hero-section">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="hero-greeting"><span class="bracket">[</span> Hello! <span class="bracket">]</span></p>
+            <h1 class="hero-title">
+              <span class="hero-line hero-line-sm">I'm</span>
+              <span class="hero-line hero-name">Ibrahim</span>
+              <span class="hero-line hero-name hero-name-outline">Cheena</span>
+            </h1>
+            <div class="hero-terminal">
+              <span class="prompt">&gt;_</span>
+              <span id="typing-animation"></span><span class="caret"></span>
+            </div>
+            <h2 class="hero-role">Software &amp; Automation Engineer</h2>
+            <div class="hero-cta">
+              <span class="tilt-wrap"><a href="https://www.linkedin.com/in/ibrahimcheena/" class="btn btn-solid">LinkedIn</a></span>
+              <span class="tilt-wrap"><a href="https://github.com/IbrahimCheena" class="btn btn-ghost">My Works</a></span>
+            </div>
+          </div>
 
-						<script>
-
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
-
-						// Create an array of typing text
-						const typingTexts = [
-						'Software Engineer  ',
-						'Automation Engineer  ',
-						'Full Stack Developer   ',
-						];
-
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
-
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
-
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
-
-						</script>
-
-						<br>
-						<br>
-                  <span id="typing-animation"></span>
-                  <br><br>
-                  <h2>Software & Automation Engineer</h2>
-                  <p>
-                    <a href="https://www.linkedin.com/in/ibrahimcheena/" class="btn btn-primary py-3 px-4">LinkedIn</a>
-                    <a href="https://github.com/IbrahimCheena" class="btn btn-white btn-outline-white py-3 px-4">My Works</a>
-                  </p>
-                </div>
-              </div>
+          <div class="hero-visual">
+            <div class="portrait-frame">
+              <span class="corner c-tl"></span><span class="corner c-tr"></span>
+              <span class="corner c-bl"></span><span class="corner c-br"></span>
+              <img src="images/IMG_6094.jpeg" alt="Ibrahim Cheena">
+              <div class="portrait-scan"></div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-      <div class="container">
-        <div class="row">
-          <div class="row d-flex align-items-stretch">
-            <div class="col-md-6 col-lg-5 d-flex">
-              <div class="img-about img d-flex align-items-stretch">
-                <div class="overlay">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-5">
-                      <div class="about-img">
-                        <!-- Add your profile image here -->
-                        <img src="images/abo.JPG" class="img-fluid rounded b-shadow-a" alt="Ibrahim Cheena">
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-7">
-                      <div class="about-info">
-						<p><span class="title-s">Name: </span> <span>Ibrahim Cheena</span></p>
-						<p><span class="title-s">Job Role: </span> <span>Software Engineer | Full-Stack Developer | Test Automation Engineer</span></p>
-						<p><span class="title-s">Experience: </span> <span>3+ Years</span></p>
-						<p><span class="title-s">Address: </span> <span>San Jose, CA</span></p>
-                      </div>
-                    </div>
-                  </div>
-				  <div class="skill-mf">
-					<p class="title-s">Skills</p>
-					
-					<span>Java</span> <span class="pull-right">95%</span>
-					<div class="progress">
-					  <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-					</div>
-				  
-					<span>React</span> <span class="pull-right">90%</span>
-					<div class="progress">
-					  <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-					</div>
-				  
-					<span>Spring Boot</span> <span class="pull-right">85%</span>
-					<div class="progress">
-					  <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-					</div>
-				  
-					<span>SQL</span> <span class="pull-right">90%</span>
-					<div class="progress">
-					  <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-					</div>
-				  
-					<span>Python</span> <span class="pull-right">85%</span>
-					<div class="progress">
-					  <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-					</div>
-				  
-					<span>Node.js</span> <span class="pull-right">80%</span>
-					<div class="progress">
-					  <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-					</div>
-				  
-					<span>AWS</span> <span class="pull-right">75%</span>
-					<div class="progress">
-					  <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-					</div>
-				  
-					<span>Agile Methodologies</span> <span class="pull-right">90%</span>
-					<div class="progress">
-					  <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-					</div>
-				  
-					<span>CI/CD</span> <span class="pull-right">85%</span>
-					<div class="progress">
-					  <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-					</div>
-				  
-					<span>Automated Testing</span> <span class="pull-right">90%</span>
-					<div class="progress">
-					  <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-					</div>
-				  </div>
-                </div>
+        <!-- floating tech badges -->
+        <div class="hero-badges" aria-hidden="true">
+          <span class="hero-badge" style="--d: 0s;  top: 16%; left: 3%;">Java</span>
+          <span class="hero-badge" style="--d: -2s; top: 40%; left: 7%;">React</span>
+          <span class="hero-badge" style="--d: -4s; top: 66%; left: 3%;">Spring Boot</span>
+          <span class="hero-badge" style="--d: -6s; top: 84%; left: 10%;">Python</span>
+          <span class="hero-badge" style="--d: -3s; top: 10%; left: 42%;">Node.js</span>
+          <span class="hero-badge" style="--d: -8s; top: 14%; right: 6%;">AWS</span>
+          <span class="hero-badge" style="--d: -5s; top: 80%; right: 8%;">Docker</span>
+          <span class="hero-badge" style="--d: -7s; top: 92%; left: 44%;">CI/CD</span>
+        </div>
+
+        <!-- skill ticker -->
+        <div class="hero-marquee" aria-hidden="true">
+          <div class="marquee-track">
+            <span>Java</span><span>React</span><span>Spring Boot</span><span>SQL</span><span>Python</span><span>Node.js</span><span>AWS</span><span>Agile Methodologies</span><span>CI/CD</span><span>Automated Testing</span>
+            <span>Java</span><span>React</span><span>Spring Boot</span><span>SQL</span><span>Python</span><span>Node.js</span><span>AWS</span><span>Agile Methodologies</span><span>CI/CD</span><span>Automated Testing</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== ABOUT ===================== -->
+      <section id="about-section" class="section">
+        <span class="ghost-title" aria-hidden="true" data-ghost>About</span>
+        <div class="container">
+          <header class="section-head" data-reveal>
+            <p class="section-label">// 01. about</p>
+            <h2 class="section-title">About Me</h2>
+          </header>
+
+          <div class="about-grid">
+            <div class="terminal-card" data-reveal>
+              <div class="terminal-bar">
+                <span class="t-dot"></span><span class="t-dot"></span><span class="t-dot"></span>
+                <span class="terminal-path">ibrahim@portfolio: ~/about</span>
+              </div>
+              <div class="terminal-body">
+                <p class="terminal-cmd">$ cat about.txt</p>
+                <p class="about-text" id="about-text">Highly motivated Software Engineer with 3+ years of experience in full-stack development, test automation, and distributed systems. Recently developed a comprehensive Sales CRM platform at Insure123, managing 5k+ customer profiles and improving agent productivity by 40%. Proven track record of building scalable applications, optimizing system performance, and delivering measurable business impact across insurance, healthcare, and technology sectors.</p>
+                <ul class="spec-list">
+                  <li><span class="spec-key">Profile:</span> <span>Software Development</span></li>
+                  <li><span class="spec-key">Domain:</span> <span>Web Development, Test Automation and Quality Assurance, E-Commerce and FinTech Solutions, Distributed Systems, Cloud-Native Applications</span></li>
+                  <li><span class="spec-key">Education:</span> <span>Bachelor&rsquo;s in Computer Science</span></li>
+                  <li><span class="spec-key">Language:</span> <span>English</span></li>
+                  <li><span class="spec-key">Tools:</span> <span>Git, Docker, Kubernetes, Azure DevOps, AWS, Jest, Playwright</span></li>
+                  <li><span class="spec-key">Interest:</span> <span>Traveling, Teaching, YouTube Content Creation</span></li>
+                </ul>
               </div>
             </div>
-            <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-              <div class="row justify-content-start pb-3">
-                <div class="col-md-12 heading-section ftco-animate">
-                  <h1 class="big">About</h1>
-                  <h2 class="mb-4">About Me</h2>
-                  <p>
-  Highly motivated Software Engineer with 3+ years of experience in full-stack development, test automation, and distributed systems. Recently developed a comprehensive Sales CRM platform at Insure123, managing 5k+ customer profiles and improving agent productivity by 40%. Proven track record of building scalable applications, optimizing system performance, and delivering measurable business impact across insurance, healthcare, and technology sectors.                    <li class="d-flex"><span>Profile:</span> <span>Software Development</span></li>
-					<li class="d-flex"><span>Domain:</span> <span>Web Development, Test Automation and Quality Assurance, E-Commerce and FinTech Solutions, Distributed Systems, Cloud-Native Applications</span></li>                    <li class="d-flex"><span>Education:</span> <span>Bachelor’s in Computer Science</span></li>
-					<li class="d-flex"><span>Language:</span> <span>English</span></li>
-					<li class="d-flex"><span>Tools:</span> <span>Git, Docker, Kubernetes, Azure DevOps, AWS, Jest, Playwright</span></li>                    <li class="d-flex"><span>Interest:</span> <span>Traveling, Teaching, YouTube Content Creation</span></li>
-                  </ul>
-                </div>
+
+            <aside class="id-card glass-card" data-reveal>
+              <div class="id-photo">
+                <img src="images/abo.JPG" alt="Ibrahim Cheena">
               </div>
+              <ul class="stat-list">
+                <li><span class="spec-key">Name:</span> <span>Ibrahim Cheena</span></li>
+                <li><span class="spec-key">Job Role:</span> <span>Software Engineer | Full-Stack Developer | Test Automation Engineer</span></li>
+                <li><span class="spec-key">Experience:</span> <span>3+ Years</span></li>
+                <li><span class="spec-key">Address:</span> <span>San Jose, CA</span></li>
+              </ul>
+            </aside>
+          </div>
+
+          <div class="skills-block">
+            <h3 class="skills-heading" data-reveal>Skills</h3>
+            <div class="skills-grid">
+              <div class="skill-card" data-percent="95"><span class="skill-name">Java</span><span class="skill-value">95%</span><div class="skill-bar"><div class="skill-bar-fill"></div></div></div>
+              <div class="skill-card" data-percent="90"><span class="skill-name">React</span><span class="skill-value">90%</span><div class="skill-bar"><div class="skill-bar-fill"></div></div></div>
+              <div class="skill-card" data-percent="85"><span class="skill-name">Spring Boot</span><span class="skill-value">85%</span><div class="skill-bar"><div class="skill-bar-fill"></div></div></div>
+              <div class="skill-card" data-percent="90"><span class="skill-name">SQL</span><span class="skill-value">90%</span><div class="skill-bar"><div class="skill-bar-fill"></div></div></div>
+              <div class="skill-card" data-percent="85"><span class="skill-name">Python</span><span class="skill-value">85%</span><div class="skill-bar"><div class="skill-bar-fill"></div></div></div>
+              <div class="skill-card" data-percent="80"><span class="skill-name">Node.js</span><span class="skill-value">80%</span><div class="skill-bar"><div class="skill-bar-fill"></div></div></div>
+              <div class="skill-card" data-percent="75"><span class="skill-name">AWS</span><span class="skill-value">75%</span><div class="skill-bar"><div class="skill-bar-fill"></div></div></div>
+              <div class="skill-card" data-percent="90"><span class="skill-name">Agile Methodologies</span><span class="skill-value">90%</span><div class="skill-bar"><div class="skill-bar-fill"></div></div></div>
+              <div class="skill-card" data-percent="85"><span class="skill-name">CI/CD</span><span class="skill-value">85%</span><div class="skill-bar"><div class="skill-bar-fill"></div></div></div>
+              <div class="skill-card" data-percent="90"><span class="skill-name">Automated Testing</span><span class="skill-value">90%</span><div class="skill-bar"><div class="skill-bar-fill"></div></div></div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="ftco-section ftco-no-pb" id="resume-section">
-      <div class="container">
-        <div class="row justify-content-center pb-5">
-			<div class="col-md-10 heading-section text-center ftco-animate">
-				<h1 class="big big-2">Resume</h1>
-				<h2 class="mb-4">Resume</h2>
-				<p>
-				  Highly motivated Software Engineer with 3+ years of experience in <strong>full-stack development</strong>, <strong>test automation</strong>, and <strong>distributed systems</strong>. Proficient in <strong>Java</strong>, <strong>React.js</strong>, <strong>Spring Boot</strong>, <strong>Node.js</strong>, and <strong>Python</strong>, with expertise in building scalable web applications, RESTful APIs, and automated testing solutions. Skilled in <strong>cloud-native architectures</strong> (Docker, Kubernetes, AWS), <strong>CI/CD pipelines</strong>, and <strong>Agile methodologies</strong>. Passionate about delivering high-quality software solutions and optimizing testing processes. Graduated from <strong>California State University</strong> with a Bachelor’s in Computer Science, specializing in Software Engineering, and achieved a <strong>3.764 GPA</strong>.
-				</p>
-				<p><a href="resume/Ibrahim_Cheena_SWE_Resume.pdf" class="btn btn-primary py-3 px-4" download="Ibrahim_Cheena_SWE_Resume.pdf">Download Resume</a></p>
-			  </div>
+      <!-- ===================== RESUME ===================== -->
+      <section id="resume-section" class="section">
+        <span class="ghost-title" aria-hidden="true" data-ghost>Resume</span>
+        <div class="container container-narrow">
+          <header class="section-head section-head-center" data-reveal>
+            <p class="section-label">// 02. resume</p>
+            <h2 class="section-title">Resume</h2>
+          </header>
+          <p class="resume-blurb" id="resume-text">
+            Highly motivated Software Engineer with 3+ years of experience in <strong>full-stack development</strong>, <strong>test automation</strong>, and <strong>distributed systems</strong>. Proficient in <strong>Java</strong>, <strong>React.js</strong>, <strong>Spring Boot</strong>, <strong>Node.js</strong>, and <strong>Python</strong>, with expertise in building scalable web applications, RESTful APIs, and automated testing solutions. Skilled in <strong>cloud-native architectures</strong> (Docker, Kubernetes, AWS), <strong>CI/CD pipelines</strong>, and <strong>Agile methodologies</strong>. Passionate about delivering high-quality software solutions and optimizing testing processes. Graduated from <strong>California State University</strong> with a Bachelor&rsquo;s in Computer Science, specializing in Software Engineering, and achieved a <strong>3.764 GPA</strong>.
+          </p>
+          <p class="center" data-reveal>
+            <span class="tilt-wrap"><a href="resume/Ibrahim_Cheena_SWE_Resume.pdf" class="btn btn-solid" download="Ibrahim_Cheena_SWE_Resume.pdf">Download Resume</a></span>
+          </p>
         </div>
-		<li<a href="#experience-section" class="nav-link"><span></span></a></li>
-<!-- Replace your entire experience section with this corrected version -->
+      </section>
 
-<div id="experience-section" class="row">
-  <h1 class="big-4">Experience</h1>
-  <div class="underline"></div>
-</div>
-<br>
+      <!-- ===================== EXPERIENCE ===================== -->
+      <section id="experience-section" class="section">
+        <span class="ghost-title" aria-hidden="true" data-ghost>Career</span>
+        <div class="container">
+          <header class="section-head" data-reveal>
+            <p class="section-label">// 03. experience</p>
+            <h2 class="section-title">Experience</h2>
+          </header>
 
-<!-- Row 1: Insure123 and Olympiah -->
-<div class="row">
-  <!-- Insure123 - NEW CURRENT ROLE -->
-  <div class="col-md-6">
-    <div class="resume-wrap ftco-animate">
-      <span class="date">Apr 2025 - Mar 2026</span>
-      <h2>Software Engineer</h2>
-      <span class="position">Insure123 Insurance Agency Inc., San Jose, CA</span>
-      <p class="mt-4">
-        <ul>
-		  <li>Leading development of full-stack features for a modern insurance platform using React.js, Node.js, Express, and MySQL.</li>
-          <li>Designed and developed a Sales CRM platform for insurance agents, integrating Java + Spring Boot backends, MySQL databases, and RESTful APIs, enabling agents to manage 5k+ customer profiles.</li>
-          <li>Implemented full stack workflows with React.js, TypeScript, HTML, CSS, and Tailwind, improving usability and agent productivity by 40%.</li>
-          <li>Enhanced API performance, reducing average response time by 35%, and debugged production issues across distributed services.</li>
-          <li>Integrated analytics dashboards and visualization tools for customer data insights, increasing adoption rate among agents by 50%.</li>
-        </ul>
-      </p>
-    </div>
-  </div>
+          <div class="timeline">
+            <article class="timeline-item" data-reveal>
+              <span class="timeline-node"></span>
+              <div class="timeline-card glass-card">
+                <span class="date-chip">Apr 2025 - Mar 2026</span>
+                <h3>Software Engineer</h3>
+                <p class="position">Insure123 Insurance Agency Inc., San Jose, CA</p>
+                <ul class="bullets">
+                  <li>Leading development of full-stack features for a modern insurance platform using React.js, Node.js, Express, and MySQL.</li>
+                  <li>Designed and developed a Sales CRM platform for insurance agents, integrating Java + Spring Boot backends, MySQL databases, and RESTful APIs, enabling agents to manage 5k+ customer profiles.</li>
+                  <li>Implemented full stack workflows with React.js, TypeScript, HTML, CSS, and Tailwind, improving usability and agent productivity by 40%.</li>
+                  <li>Enhanced API performance, reducing average response time by 35%, and debugged production issues across distributed services.</li>
+                  <li>Integrated analytics dashboards and visualization tools for customer data insights, increasing adoption rate among agents by 50%.</li>
+                </ul>
+              </div>
+            </article>
 
-  <!-- Olympiah -->
-  <div class="col-md-6">
-    <div class="resume-wrap ftco-animate">
-      <span class="date">Oct 2024 - Mar 2025</span>
-      <h2>Software Engineer / Tools and Automation Engineer</h2>
-      <span class="position">Olympiah, Monterey, CA</span>
-      <p class="mt-4">
-        <ul>
-          <li>Developed and maintained full-stack web applications using React.js, Next.js, and Node.js, ensuring high performance and scalability.</li>
-          <li>Designed and integrated RESTful APIs, optimizing system communication and improving data integrity.</li>
-          <li>Implemented a containerized test environment using Docker, enabling parallel test execution.</li>
-          <li>Designed and deployed automated test cases using Playwright, Jest, JUnit, and XCTest, increasing test efficiency by 40%.</li>
-          <li>Automated workflows using Python, Shell Scripting, and Terraform, improving infrastructure provisioning speed by 50%.</li>
-          <li>Developed CI/CD pipelines in Azure DevOps, ensuring faster and more reliable deployments.</li>
-          <li>Mentored junior developers in test-driven development (TDD) and quality assurance best practices.</li>
-        </ul>
-      </p>
-    </div>
-  </div>
-</div>
+            <article class="timeline-item" data-reveal>
+              <span class="timeline-node"></span>
+              <div class="timeline-card glass-card">
+                <span class="date-chip">Oct 2024 - Mar 2025</span>
+                <h3>Software Engineer / Tools and Automation Engineer</h3>
+                <p class="position">Olympiah, Monterey, CA</p>
+                <ul class="bullets">
+                  <li>Developed and maintained full-stack web applications using React.js, Next.js, and Node.js, ensuring high performance and scalability.</li>
+                  <li>Designed and integrated RESTful APIs, optimizing system communication and improving data integrity.</li>
+                  <li>Implemented a containerized test environment using Docker, enabling parallel test execution.</li>
+                  <li>Designed and deployed automated test cases using Playwright, Jest, JUnit, and XCTest, increasing test efficiency by 40%.</li>
+                  <li>Automated workflows using Python, Shell Scripting, and Terraform, improving infrastructure provisioning speed by 50%.</li>
+                  <li>Developed CI/CD pipelines in Azure DevOps, ensuring faster and more reliable deployments.</li>
+                  <li>Mentored junior developers in test-driven development (TDD) and quality assurance best practices.</li>
+                </ul>
+              </div>
+            </article>
 
-<!-- Row 2: DKomplex and CSUMB -->
-<div class="row">
-  <!-- DKomplex -->
-  <div class="col-md-6">
-    <div class="resume-wrap ftco-animate">
-      <span class="date">May 2024 - Oct 2024</span>
-      <h2>Full Stack Developer</h2>
-      <span class="position">DKomplex, Monterey, CA</span>
-      <p class="mt-4">
-        <ul>
-          <li>Developed responsive and scalable front-end interfaces with React and TypeScript.</li>
-          <li>Integrated Microsoft Authentication for secure user access, improving system security.</li>
-          <li>Designed and implemented backend solutions with Node.js, ensuring seamless data processing.</li>
-          <li>Developed end-to-end testing solutions with JUnit, Jest, and Playwright, reducing manual testing efforts by 35%.</li>
-          <li>Configured Kubernetes clusters for automated test execution and load balancing.</li>
-          <li>Built CI/CD pipelines using Azure DevOps, reducing deployment time by 40%.</li>
-        </ul>
-      </p>
-    </div>
-  </div>
+            <article class="timeline-item" data-reveal>
+              <span class="timeline-node"></span>
+              <div class="timeline-card glass-card">
+                <span class="date-chip">May 2024 - Oct 2024</span>
+                <h3>Full Stack Developer</h3>
+                <p class="position">DKomplex, Monterey, CA</p>
+                <ul class="bullets">
+                  <li>Developed responsive and scalable front-end interfaces with React and TypeScript.</li>
+                  <li>Integrated Microsoft Authentication for secure user access, improving system security.</li>
+                  <li>Designed and implemented backend solutions with Node.js, ensuring seamless data processing.</li>
+                  <li>Developed end-to-end testing solutions with JUnit, Jest, and Playwright, reducing manual testing efforts by 35%.</li>
+                  <li>Configured Kubernetes clusters for automated test execution and load balancing.</li>
+                  <li>Built CI/CD pipelines using Azure DevOps, reducing deployment time by 40%.</li>
+                </ul>
+              </div>
+            </article>
 
-  <!-- CSUMB -->
-  <div class="col-md-6">
-    <div class="resume-wrap ftco-animate">
-      <span class="date">Aug 2023 - May 2024</span>
-      <h2>Student Web Developer</h2>
-      <span class="position">California State University, Monterey Bay</span>
-      <p class="mt-4">
-        <ul>
-          <li>Designed and maintained user-friendly web applications serving 2,000+ monthly users using React.js and CSS.</li>
-          <li>Developed and integrated APIs to enhance website functionality and enable real-time data visualization.</li>
-          <li>Conducted 50+ cross-browser compatibility tests to optimize user experience.</li>
-          <li>Deployed scalable applications using Spring and Docker, supporting distributed microservices testing.</li>
-          <li>Partnered with cross-functional teams to optimize database performance and security.</li>
-        </ul>
-      </p>
-    </div>
-  </div>
-</div>
-  
-        <br>
-		<li<a href="#education-section" class="nav-link"><span></span></a></li>
-
-		<div id="education-section" class="row">
-		  <h1 class="big-4">Education</h1>
-		  <div class="underline"></div>
-		</div>
-		
-        <br>
-		<div class="row">
-			<div class="col-md-6">
-			  <div class="resume-wrap ftco-animate">
-				<span class="date">2023 - 2024</span>
-				<h2>Bachelor’s in Computer Science</h2>
-				<span class="position">California State University Monterey Bay</span>
-				<p class="mt-4">GPA: 3.746/4</p>
-				<p class="mt-4">Select Courses: Data Structures and Algorithms, Software Development, Software Design, Operating Systems, Software Engineering, Automation Engineering</p>
-			</div>
-			</div>
-			<div class="col-md-6">
-			  <div class="resume-wrap ftco-animate">
-				<span class="date">2021 - 2023</span>
-				<h2>Bachelor’s of Science in Information Technology</h2>
-				<span class="position">Mumbai University, India</span>
-				<p class="mt-4">GPA: 9.44/10</p>
-				<p class="mt-4">Select Courses: Object Oriented Programming, Internet Programming, Database Management Systems</p>
-			  </div>
-			</div>
-		  </div>
-      </div>
-    </section>
-
-    <section class="ftco-section" id="project-section">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-5">
-			  <div class="col-md-7 heading-section text-center ftco-animate">
-				<h1 class="big big-2">Projects</h1>
-				<h2 class="mb-4">Projects</h2>
-				<p>Below are some of my key projects showcasing my skills in software development.</p>
-			  </div>
-			</div>
-			<div class="row">
-				<!-- DevWatch -->
-				<div class="col-md-6">
-				  <div class="resume-wrap ftco-animate">
-					<span class="date">Mar 2026 - May 2026</span>
-					<h2>DevWatch</h2>
-					<p class="mt-4">
-					  <ul>
-						<li>Built Java 21 Spring Boot REST API with GitHub integration, CI/CD history tracking, and AI report generation via HuggingFace Mistral 7B at zero API cost.</li>
-						<li>Next.js 14 frontend with GitHub OAuth, animated CI/CD dashboards using Framer Motion and Recharts, and client-side PDF export via jsPDF.</li>
-						<li>Python CLI using GitPython and Click for static repo analysis, test classification, and composite quality scoring from 0 to 100.</li>
-						<li>Three GitHub Actions workflows covering Node 18 frontend CI, Java 21 Maven backend CI, and Python 3.11 pylint CI.</li>
-					  </ul>
-					</p>
-					<p class="mt-2"><a href="https://github.com/IbrahimCheena/devwatch" target="_blank" class="btn btn-primary btn-sm">View on GitHub</a></p>
-				  </div>
-				</div>
-
-				<!-- ContextIQ -->
-				<div class="col-md-6">
-				  <div class="resume-wrap ftco-animate">
-					<span class="date">Jan 2026 - Feb 2026</span>
-					<h2>ContextIQ</h2>
-					<p class="mt-4">
-					  <ul>
-						<li>RAG pipeline with 500-token chunking and OpenAI text-embedding-3-small storing 1536-dim vectors in Supabase pgvector.</li>
-						<li>Streaming query architecture via Server-Sent Events piping GPT-4o responses token-by-token with source attribution cards surfaced before generation completes.</li>
-						<li>Re-upload deduplication, cosine-similarity fallback for zero-result edge cases, and cron-based keep-alive ensuring 99%+ uptime.</li>
-						<li>Dark/light mode with next-themes, fully mobile-responsive layout.</li>
-					  </ul>
-					</p>
-					<p class="mt-2"><a href="https://github.com/IbrahimCheena/contextiq" target="_blank" class="btn btn-primary btn-sm">View on GitHub</a></p>
-				  </div>
-				</div>
-			  </div>
-
-			  <div class="row">
-				<!-- PawsConnect Website -->
-				<div class="col-md-6">
-				  <div class="resume-wrap ftco-animate">
-					<span class="date">Jan 2024 - May 2024</span>
-					<h2>PawsConnect Website</h2>
-					<p class="mt-4">
-					  <ul>
-						<li>Developed a full-stack pet management platform using React.js, Next.js, and Svelte.</li>
-						<li>Integrated RESTful APIs for seamless data retrieval and real-time updates.</li>
-						<li>Built scalable backend solutions with TypeScript and MySQL, ensuring high performance.</li>
-					  </ul>
-					</p>
-					<p class="mt-2"><a href="https://www.loom.com/share/efb6c447a0a14797a7a15cc40da839fc" target="_blank" class="btn btn-primary btn-sm">View Demo</a></p>
-				  </div>
-				</div>
-			  </div>
-			  
-		  </div>
-		  
-		  
-    </section>
-
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
-            <p>Below are the details to reach out to me!</p>
+            <article class="timeline-item" data-reveal>
+              <span class="timeline-node"></span>
+              <div class="timeline-card glass-card">
+                <span class="date-chip">Aug 2023 - May 2024</span>
+                <h3>Student Web Developer</h3>
+                <p class="position">California State University, Monterey Bay</p>
+                <ul class="bullets">
+                  <li>Designed and maintained user-friendly web applications serving 2,000+ monthly users using React.js and CSS.</li>
+                  <li>Developed and integrated APIs to enhance website functionality and enable real-time data visualization.</li>
+                  <li>Conducted 50+ cross-browser compatibility tests to optimize user experience.</li>
+                  <li>Deployed scalable applications using Spring and Docker, supporting distributed microservices testing.</li>
+                  <li>Partnered with cross-functional teams to optimize database performance and security.</li>
+                </ul>
+              </div>
+            </article>
           </div>
         </div>
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box p-4 text-center">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-map-signs"></span>
-              </div>
-              <h3 class="mb-4">Address</h3>
+      </section>
+
+      <!-- ===================== EDUCATION ===================== -->
+      <section id="education-section" class="section">
+        <span class="ghost-title" aria-hidden="true" data-ghost>Study</span>
+        <div class="container">
+          <header class="section-head" data-reveal>
+            <p class="section-label">// 04. education</p>
+            <h2 class="section-title">Education</h2>
+          </header>
+
+          <div class="edu-grid">
+            <article class="edu-card glass-card" data-reveal>
+              <span class="date-chip">2023 - 2024</span>
+              <h3>Bachelor&rsquo;s in Computer Science</h3>
+              <p class="position">California State University Monterey Bay</p>
+              <p class="edu-gpa">GPA: <span class="accent-text">3.746/4</span></p>
+              <p class="edu-courses">Select Courses: Data Structures and Algorithms, Software Development, Software Design, Operating Systems, Software Engineering, Automation Engineering</p>
+            </article>
+            <article class="edu-card glass-card" data-reveal>
+              <span class="date-chip">2021 - 2023</span>
+              <h3>Bachelor&rsquo;s of Science in Information Technology</h3>
+              <p class="position">Mumbai University, India</p>
+              <p class="edu-gpa">GPA: <span class="accent-text">9.44/10</span></p>
+              <p class="edu-courses">Select Courses: Object Oriented Programming, Internet Programming, Database Management Systems</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== PROJECTS ===================== -->
+      <section id="project-section" class="section">
+        <span class="ghost-title" aria-hidden="true" data-ghost>Builds</span>
+        <div class="container">
+          <header class="section-head section-head-center" data-reveal>
+            <p class="section-label">// 05. projects</p>
+            <h2 class="section-title">Projects</h2>
+            <p class="section-sub">Below are some of my key projects showcasing my skills in software development.</p>
+          </header>
+
+          <div class="bento">
+            <article class="project-card bento-main" data-reveal>
+              <span class="project-num" aria-hidden="true">01</span>
+              <span class="date-chip">Mar 2026 - May 2026</span>
+              <h3>DevWatch</h3>
+              <ul class="bullets">
+                <li>Built Java 21 Spring Boot REST API with GitHub integration, CI/CD history tracking, and AI report generation via HuggingFace Mistral 7B at zero API cost.</li>
+                <li>Next.js 14 frontend with GitHub OAuth, animated CI/CD dashboards using Framer Motion and Recharts, and client-side PDF export via jsPDF.</li>
+                <li>Python CLI using GitPython and Click for static repo analysis, test classification, and composite quality scoring from 0 to 100.</li>
+                <li>Three GitHub Actions workflows covering Node 18 frontend CI, Java 21 Maven backend CI, and Python 3.11 pylint CI.</li>
+              </ul>
+              <p class="tech-chips"><span class="chip">Java 21</span><span class="chip">Spring Boot</span><span class="chip">Next.js 14</span><span class="chip">Python</span><span class="chip">GitHub Actions</span></p>
+              <p class="project-link"><a href="https://github.com/IbrahimCheena/devwatch" target="_blank" class="btn btn-ghost btn-sm">View on GitHub</a></p>
+            </article>
+
+            <article class="project-card bento-side" data-reveal>
+              <span class="project-num" aria-hidden="true">02</span>
+              <span class="date-chip">Jan 2026 - Feb 2026</span>
+              <h3>ContextIQ</h3>
+              <ul class="bullets">
+                <li>RAG pipeline with 500-token chunking and OpenAI text-embedding-3-small storing 1536-dim vectors in Supabase pgvector.</li>
+                <li>Streaming query architecture via Server-Sent Events piping GPT-4o responses token-by-token with source attribution cards surfaced before generation completes.</li>
+                <li>Re-upload deduplication, cosine-similarity fallback for zero-result edge cases, and cron-based keep-alive ensuring 99%+ uptime.</li>
+                <li>Dark/light mode with next-themes, fully mobile-responsive layout.</li>
+              </ul>
+              <p class="tech-chips"><span class="chip">RAG</span><span class="chip">OpenAI</span><span class="chip">GPT-4o</span><span class="chip">Supabase pgvector</span><span class="chip">SSE</span></p>
+              <p class="project-link"><a href="https://github.com/IbrahimCheena/contextiq" target="_blank" class="btn btn-ghost btn-sm">View on GitHub</a></p>
+            </article>
+
+            <article class="project-card bento-wide" data-reveal>
+              <span class="project-num" aria-hidden="true">03</span>
+              <span class="date-chip">Jan 2024 - May 2024</span>
+              <h3>PawsConnect Website</h3>
+              <ul class="bullets">
+                <li>Developed a full-stack pet management platform using React.js, Next.js, and Svelte.</li>
+                <li>Integrated RESTful APIs for seamless data retrieval and real-time updates.</li>
+                <li>Built scalable backend solutions with TypeScript and MySQL, ensuring high performance.</li>
+              </ul>
+              <p class="tech-chips"><span class="chip">React.js</span><span class="chip">Next.js</span><span class="chip">Svelte</span><span class="chip">TypeScript</span><span class="chip">MySQL</span></p>
+              <p class="project-link"><a href="https://www.loom.com/share/efb6c447a0a14797a7a15cc40da839fc" target="_blank" class="btn btn-ghost btn-sm">View Demo</a></p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== CONTACT ===================== -->
+      <section id="contact-section" class="section">
+        <span class="ghost-title" aria-hidden="true" data-ghost>Connect</span>
+        <div class="container">
+          <header class="section-head section-head-center" data-reveal>
+            <p class="section-label">// 06. contact</p>
+            <h2 class="section-title">Contact Me</h2>
+            <p class="section-sub">Below are the details to reach out to me!</p>
+          </header>
+
+          <div class="contact-grid">
+            <div class="contact-box glass-card" data-reveal>
+              <span class="contact-icon icon-map-signs"></span>
+              <h3>Address</h3>
               <p>San Jose, CA</p>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box p-4 text-center">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-phone2"></span>
-              </div>
-              <h3 class="mb-4">Contact Number</h3>
+            <div class="contact-box glass-card" data-reveal>
+              <span class="contact-icon icon-phone2"></span>
+              <h3>Contact Number</h3>
               <p><a href="tel://8312249635">+1 (831)-224-9635</a></p>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box p-4 text-center">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-paper-plane"></span>
-              </div>
-              <h3 class="mb-4">Email Address</h3>
+            <div class="contact-box glass-card" data-reveal>
+              <span class="contact-icon icon-paper-plane"></span>
+              <h3>Email Address</h3>
               <p><a href="mailto:ibrahimyusufcheena@gmail.com">ibrahimyusufcheena@gmail.com</a></p>
             </div>
+            <div class="contact-box glass-card" data-reveal>
+              <span class="contact-icon icon-globe"></span>
+              <h3>Download Resume</h3>
+              <p><a href="resume/Ibrahim_Cheena_SWE_Resume.pdf" class="btn btn-ghost btn-sm" target="_blank">Download</a></p>
+            </div>
           </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box p-4 text-center">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-globe"></span>
-              </div>
-			  <h3 class="mb-4">Download Resume</h3>
-			  <p><a href="resume/Ibrahim_Cheena_SWE_Resume.pdf" class="btn btn-warning btn-sm" target="_blank">Download</a></p>
-			</div>
+
+          <div class="contact-cta" data-reveal>
+            <h2>Have a <span class="accent-text">Question?</span></h2>
+            <span class="tilt-wrap"><a href="https://docs.google.com/forms/d/e/1FAIpQLSczym_F1-4EU2OKxUzbjBY1l0BM9kbqwBrPOfYgU8Dl_FQYLg/viewform?usp=header" class="btn btn-solid">Click Here</a></span>
+          </div>
+
+          <div class="socials" data-reveal>
+            <span class="socials-label">Find me on</span>
+            <a href="https://www.youtube.com/@ibrahimcvlogs" aria-label="YouTube"><span class="icon-youtube"></span></a>
+            <a href="https://www.linkedin.com/in/ibrahimcheena/" aria-label="LinkedIn"><span class="icon-linkedin"></span></a>
+            <a href="https://www.instagram.com/ibrahimm.cheena/" aria-label="Instagram"><span class="icon-instagram"></span></a>
           </div>
         </div>
-		<div class="container">
-			<br>
-			<br>
-			<div class="row justify-content-center">
-				<div class="col-md-7 ftco-animate text-center">
-					<h2>Have a<span> Question?  </span> <a href="https://docs.google.com/forms/d/e/1FAIpQLSczym_F1-4EU2OKxUzbjBY1l0BM9kbqwBrPOfYgU8Dl_FQYLg/viewform?usp=header" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
-				</div>
-			</div>
-				<br>
-					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-					  <li class="ftco-animate normal-txt">Find me on  </li>
-					  <li class="ftco-animate"><a href="https://www.youtube.com/@ibrahimcvlogs"><span class="icon-youtube"></span></a></li>
-					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/ibrahimcheena/"><span class="icon-linkedin"></span></a></li>  
-				      <li class="ftco-animate"><a href="https://www.instagram.com/ibrahimm.cheena/"><span class="icon-instagram"></span></a></li>
-					</ul>
-				<br>
-		   </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-	<footer class="ftco-footer ftco-section">
-		<div class="container">
-		  <div class="row">
-			<div class="col-md-12 text-center">
-			  <p>
-				Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Created by Ibrahim with <i class="icon-heart color-danger" aria-hidden="true"></i>
-			  </p>
-			</div>
-		  </div>
-		</div>
-	  </footer>
-	  
+    <footer class="site-footer">
+      <p>
+        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Created by Ibrahim with <i class="icon-heart heart" aria-hidden="true"></i>
+      </p>
+    </footer>
 
-    <!-- Loader -->
-    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-    <script src="js/scrollax.min.js"></script>
-    <script src="js/main.js"></script>
+    <!-- Cyberpunk City Grid -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.module.js"
+        }
+      }
+    </script>
+    <script type="module" src="js/three-bg.js"></script>
+    <script src="js/cyberpunk-fx.js"></script>
   </body>
 </html>
