@@ -150,8 +150,8 @@
   if (typingEl) {
     var typingTexts = [
       'Software Engineer  ',
-      'Automation Engineer  ',
-      'Full Stack Developer   '
+      'Full Stack Developer  ',
+      'AI Engineer   '
     ];
     if (REDUCED_MOTION) {
       typingEl.textContent = typingTexts[0].trim();
@@ -383,14 +383,7 @@
   function initScrollFX() {
     if (!window.gsap || !window.ScrollTrigger) return;
 
-    if (REDUCED_MOTION) {
-      // static fallbacks: filled bars, visible values
-      document.querySelectorAll('.skill-card').forEach(function (card) {
-        var fill = card.querySelector('.skill-bar-fill');
-        if (fill) fill.style.width = card.dataset.percent + '%';
-      });
-      return;
-    }
+    if (REDUCED_MOTION) return;
 
     // generic fade-up reveals
     gsap.utils.toArray('[data-reveal]').forEach(function (el) {
@@ -403,7 +396,7 @@
       });
     });
 
-    // skills: cards float in with stagger, bars grow, numbers count up
+    // skills: cards float in with stagger
     var skillCards = gsap.utils.toArray('.skill-card');
     if (skillCards.length) {
       ScrollTrigger.batch(skillCards, {
@@ -411,24 +404,6 @@
         once: true,
         onEnter: function (batch) {
           gsap.from(batch, { opacity: 0, y: 40, duration: 0.6, ease: 'power2.out', stagger: 0.07 });
-          batch.forEach(function (card, i) {
-            var pct = parseInt(card.dataset.percent, 10) || 0;
-            var fill = card.querySelector('.skill-bar-fill');
-            var value = card.querySelector('.skill-value');
-            if (fill) {
-              gsap.to(fill, { width: pct + '%', duration: 1.2, delay: 0.15 + i * 0.07, ease: 'power3.out' });
-            }
-            if (value) {
-              var counter = { v: 0 };
-              gsap.to(counter, {
-                v: pct,
-                duration: 1.2,
-                delay: 0.15 + i * 0.07,
-                ease: 'power3.out',
-                onUpdate: function () { value.textContent = Math.round(counter.v) + '%'; }
-              });
-            }
-          });
         }
       });
     }
